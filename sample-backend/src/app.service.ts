@@ -7,6 +7,7 @@ import { CreateUserEvent } from './create-user.event';
 export class AppService {
   private readonly users: any[] = [];
 
+  
   constructor(
     @Inject('COMMUNICATION') private readonly communicationClient: ClientProxy,
     @Inject('ANALYTICS') private readonly analyticsClient: ClientProxy,
